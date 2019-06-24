@@ -1,0 +1,31 @@
+<view class='page'>
+  <view class='CircleList'>
+    <view class='body-view'>
+   
+      <view class='left-view'>
+      <!-- 头像 -->
+        <image class='user-icon' src='../../images/icon.jpg'></image>
+      </view>
+      
+      <!-- 昵称 -->
+      <view class='right-view'>
+        <view class='user-name-view'>
+          <label class='user-name'>用户名</label>
+        </view>
+        <!-- 视频播放器 -->
+        <block wx:for="{{realVideoPath}}" wx:key="key">
+          <video src='{{item.tempFileURL}}'></video>
+        </block>
+        <!-- 地理位置 -->
+        <view class='user-address-view'>
+         <label>地理位置</label>
+        </view>
+        <!-- 时间、删除按钮-->
+        <view class='td-view'>
+          <label>2019/05/27 23:32:10</label>
+          <icon class="delete" type="cancel" size="15" bindtap="delete" id="{{index}}"/>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

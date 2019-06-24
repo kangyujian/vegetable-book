@@ -1,0 +1,15 @@
+<view class="prew_video" hidden="{{chooesVideo==''}}">
+  <video bindfullscreenchange="bindVideoScreenChange" src="{{chooesVideo}}" ></video>
+</view>
+<text>\n</text>
+<text>\n</text><text>\n</text><text>\n</text><text>\n</text><text>\n</text>
+<text>\n</text>
+<text>\n</text>
+<text>\n</text>
+<text>\n</text>
+<text>\n</text>
+<button class='upvideo' bindtap='chooseVideo'>上传视频</button>
+<text>\n</text>
+<button class='upvideo'  bindtap='ensure'>确定上传</button>
+<text>\n</text>
+<button  class='upvideo'  bindtap='myVideoDB' type='primary'>跳转到视频库</button>

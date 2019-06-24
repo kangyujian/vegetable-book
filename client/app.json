@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/Article/Article",
+    "pages/Video/Video",
+    "pages/Voice/Voice",
+    "pages/Picture/Picture",
+    "pages/my/my",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/notedb/notedb",
+    "pages/myadd/myadd",
+	  "pages/Noteloop/Noteloop",
+    "pages/upMyNote/upMyLoop",
+    "pages/voiceDB/voiceDB",
+    "pages/videoDB/videoDB"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#B3EE3A",
+    "navigationBarTitleText": "菜菜记事本",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+    
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "tabBarImg/home.png",
+        "selectedIconPath": "tabBarImg/homeSelect.png"
+      },
+      {
+        "pagePath": "pages/Noteloop/Noteloop",
+        "text": "笔记圈",
+        "iconPath": "tabBarImg/Edlit.png",
+        "selectedIconPath": "tabBarImg/Edlit.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "tabBarImg/my.png",
+        "selectedIconPath": "tabBarImg/mySelect.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

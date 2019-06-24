@@ -1,0 +1,92 @@
+page{
+  background:whitesmoke;
+}
+
+.page{
+  width: 100%;
+
+}
+
+.body-view{
+  display: flex;
+}
+
+.CircleList{
+  background: white;
+  margin-bottom: 1px;
+  border-bottom: 1px solid whitesmoke;
+  border-top: 1px solid whitesmoke;
+}
+
+.left-view{
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.user-icon{
+  display: flex; 
+  width:100rpx;
+  height: 100rpx;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+  margin-right: 20rpx;
+}
+
+.user-name{
+  display: flex;
+  font-size: 18px;
+  color: rgb(73, 111, 201);
+  margin-top: 30rpx;
+  margin-left: 10rpx;
+}
+
+.title{
+  display: flex;
+  font-size: 18px;
+  margin-left: 10rpx;
+}
+
+.user-content{
+  display: flex;
+  font-size: 18px;
+  margin-left: 10rpx;
+}
+
+.photo-view{
+  margin-left: 10rpx;
+  margin-bottom: 10rpx;
+}
+.photo{
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+}
+
+.user-address-view{
+  display: flex;
+  margin-top: 10rpx;
+}
+
+.user-address-view label{
+  font-size: 13px;
+  color: rgb(65, 93, 214)
+}
+
+.td-view{
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  background: white;
+}
+
+.td-view label{
+  font-size: 13px;
+}
+
+.td-view text{
+  font-size: 13px;
+  margin-left: 100rpx;
+  color: black;
+  background: white;
+}
+

@@ -1,0 +1,46 @@
+<!-- audio.wxml -->
+ <view class='CircleList'>
+  <block wx:for="{{voice}}" wx:key="key">
+    
+      <audio
+      poster="{{poster}}"
+      name="{{name}}"
+      author="{{author}}"
+      src="{{item}}"
+      controls
+      loop
+      class='voice-show'
+       id="{{index}}"
+      ></audio>
+
+    <view class='button'>
+     <view class='backtostart'  id="{{index}}">
+       <image class='icon' src='../../images/gotostart.png' style='width:30px;height:30px' data-selectIndex="{{index}}"  bindtap='audioStart'></image>
+     </view>
+
+      <view calss='voice-play'  id="{{index}}">
+        <image class='icon' src='../../images/play.png' style='width:30px;height:30px' data-selectIndex="{{index}}" bindtap='audioPlay'></image>
+      </view>
+
+      <view calss='voice-pause'   id="{{index}}">
+        <image class='icon' src='../../images/pause.png' style='width:30px;height:30px'    data-selectIndex="{{index}}" bindtap='audioPause'></image>
+      </view>
+    </view>
+
+
+    <!-- 地理位置 -->
+    <view class='user-address-view'>
+      <label>地理位置</label>
+    </view>
+
+    <!-- 时间、删除按钮-->
+    <view class='td-view'>
+      <label>2019/05/27 23:32:10</label>
+          <icon class="delete" type="cancel" size="15" bindtap="delete" id="{{index}}"/>
+    </view>
+
+    
+  </block>
+</view>
+
+

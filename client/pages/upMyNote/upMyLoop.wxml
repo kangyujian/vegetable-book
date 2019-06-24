@@ -1,0 +1,67 @@
+
+<button bindtap='ensureUp' type='primary'>请选择上传的笔记</button>
+<view class='page'>
+  <block wx:for="{{allInfo}}" wx:key="key">
+
+  <view class='CircleList'>
+    <!-- 头像 昵称  -->
+    <view class='body-view'>
+   
+      <view class='left-view'>
+      <!-- 头像 -->
+        <image class='user-icon' src='{{userImage}}'></image>
+      </view>
+      
+      <!-- 昵称 -->
+      <view class='right-view'>
+        <view class='user-name-view'>
+          <label class='user-name'>{{username}}</label>
+        </view>
+      
+      <!--标题-->
+        <view class='the-title-view'>
+          <text class='title'>标题:{{item.title}}</text>
+        </view>
+
+        <!-- 内容 -->
+        <view class='user-content-view'>
+          <text class='user-content'>{{item.content}}</text>
+        </view>
+
+        <!-- 图片 -->
+        <block wx:for="{{item.uppath}}" wx:key="key">
+          <view class='photo-view'>
+        <image class='photo' src='{{item}}' style='width:80px;height:80px'></image>
+          </view>
+        </block>
+
+        <!-- 地理位置 -->
+        <view class='user-address-view'>
+          <label>{{item.location}}</label>
+        </view>
+
+         <!-- 时间、去掉删除按钮按钮-->
+        <view class='td-view'>
+          <label>{{item.time}}</label>
+             
+        </view>
+
+
+        <!--选择按钮-->
+        <view>
+          <image src='{{isSelect[index]? hadSelect:noSelcted}}' data-selectIndex="{{index}}" bindtap='selectWant' class='select-icon'></image>
+        </view>
+
+
+
+      </view>
+    </view>
+
+ 
+
+  </view>
+
+
+ </block>
+
+</view>

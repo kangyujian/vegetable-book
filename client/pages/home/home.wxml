@@ -1,0 +1,27 @@
+<view class='container' style="background:url('https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1590897764,190036106&fm=26&gp=0.jpg')">
+<view>
+  <view class='new-type1' bindtap='goArticle'>
+    <image class='icon' src='../../images/Article.png'></image>
+    <text class='text'>文字</text>
+  </view>
+   <view class='new-type2' bindtap='goPicture'>
+    <image class='icon' src='../../images/Picture.png'></image>
+    <text class='text'>图片</text>
+  </view>
+</view>
+<view>
+   <view class='new-type3' bindtap='goVoice'>
+    <image class='icon' src='../../images/Sound.png'></image>
+    <text class='text'>声音</text>
+  </view>
+   <view class='new-type4' bindtap='goVideo'>
+    <image class='icon' src='../../images/Video.png'></image>
+    <text class='text'>视频</text>
+  </view>
+</view>
+  <!--笔记库-->
+  <text >\n</text>
+  <view class='note-db'>
+    <button type='primary' bindtap='todb'>我的笔记库</button>
+  </view>
+</view>

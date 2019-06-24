@@ -1,0 +1,49 @@
+<!--pages/Noteloop/Noteloop.wxml-->
+<import src="Noteloop_template/Noteloop_template.wxml" />
+<view class='new-container'>
+<swiper indicator-dots='true' interval='2000'
+>
+<swiper-item>
+ <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3776892502,1931827857&fm=27&gp=0.jpg'></image>
+</swiper-item>
+<swiper-item>
+ <image src='https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2959936317,159769406&fm=26&gp=0.jpg'></image>
+</swiper-item>
+<swiper-item>
+ <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2117053270,1616031467&fm=26&gp=0.jpg'></image>
+</swiper-item>
+</swiper>
+</view>
+
+<text >{{nickName}}\n</text>
+<button class='btn1' bindtap='goUpToNoteLoop'>
+    <view>上传我的笔记！</view>
+ </button>
+
+
+<block wx:for="{{initData}}" wx:key='key'>
+
+ <view  bindtap="goNoteloop">
+  <!--模板内容-->
+     <view class='artistlist'>
+  <view class='author-time'>
+  <image  class='author-icon' src='{{item.userIcon}}'></image>
+  <text class='author-name'>{{item.userNickName}}</text>
+  <text class='data'>{{item.userInfo.time}}</text>
+ </view>
+ <text class='title'>{{item.userInfo.title}}</text>
+ <image class='articleimg' src='{{item.userInfo.uppath[0]}}'></image>
+ <text class='articletext'>
+ {{item.userInfo.content}}
+ </text>
+ <view class='article-like'>
+  <image class='article-icon' src='../../images/collect.png'></image>
+  <text class='article-like-text'>收藏</text>
+  <image class='article-icon' src='../../images/good.png'></image>
+  <text  class='article-like-text'>点赞</text>
+ </view>
+</view>
+  <!--模板内容-->
+</view> 
+ </block>
+

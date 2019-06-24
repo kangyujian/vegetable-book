@@ -1,0 +1,74 @@
+<view class='top_bottomView'>
+  <scroll-view scroll-x class="scroll-x" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+    <block wx:for="{{list}}" wx:key="{{index}}">
+      <view class="view-item {{clickNumber==index?'item-active':''}}" bindtap='centerTap'>
+        {{item}}
+      </view>
+    </block>
+  </scroll-view>
+</view>
+<!-- 内容区 -->
+<swiper style="height:1100rpx" bindchange='changeSwipe' current='{{clickNumber}}'>
+  <swiper-item>
+  
+  
+    <view class='pure-picture'>
+      <!--问题标题区域-->
+      <view class='question-title-wrap'>
+        <input class='question-title' placeholder='请输入标题' maxlength='40' bindinput='handleTitleInput'>
+        </input>
+        <view class='title-count'>
+          {{titleCount}}/40
+        </view>
+      </view>
+      <!--阅读正文部分-->
+      <view class='text'>
+        <view class='text-cell'>
+          <view class='text-cell-bd'>
+            <textarea class='textarea' placeholder='请输入问题的正文内容。' maxlength='500' bindinput='handleContentInput'>
+            </textarea>
+            <!--输出正文统计字数-->
+            <view class='text-counter'>{{contentCount}}/500</view>
+          </view>
+        </view>
+      </view>
+      <!--文字部分结束-->
+
+      <!--上传图片部分-->
+      <view class='btn'>
+      <button
+        type="default" size="mini" bindtap="chooseImage" 
+        wx:if="{{images.length <= 3}}">
+          添加图片
+      </button>
+    </view>
+  <!--测试-->
+  <view>
+  <text>当前图片的数目{{images.length}}/3</text>
+  </view>
+  <!--测试-->
+  <!--预览上传的图片列表开始-->
+    <view class="question-images">
+  <block wx:for="{{images}}" wx:key="*this">
+    <view class="q-image-wrap">
+      <!-- 图片缩略图  -->
+      <image class="q-image" src="{{item}}" mode="aspectFill" data-idx="{{index}}"
+       bindtap='previewImage'></image>
+      <!-- 移除图片的按钮  -->
+      <view class="q-image-remover" data-idx="{{index}}" bindtap='removePicture'>删除</view>
+    </view>
+  </block>
+</view>
+  <!--预览上传的图片列表结束-->
+  <!--提交按钮-->
+  <view class='weui-btn-parents'>
+  <button class="weui-btn" type="primary" bindtap="submitForm">提交</button>
+  </view>
+  <!--提交按钮结束-->
+  </view>
+  </swiper-item>
+  <swiper-item>
+    
+  </swiper-item>
+
+</swiper>

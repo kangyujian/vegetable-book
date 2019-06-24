@@ -1,0 +1,57 @@
+/* pages/voiceDB/voiceDB.wxss */
+.voice-show{
+  display:flex;
+  justify-content: center;
+}
+
+.button{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+
+.voice-play{
+
+}
+
+.backtostart{
+
+}
+
+.voice-pause{
+
+}
+
+
+.CircleList{
+  background: white;
+  margin-bottom: 1px;
+  border-bottom: 1px solid whitesmoke;
+  border-top: 1px solid whitesmoke;
+}
+
+.td-view{
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  background: white;
+}
+
+.user-address-view{
+  display:flex;
+  justify-content: center;
+
+}
+
+.user-address-view label{
+  font-size: 13px;
+  color: rgb(65, 93, 214)
+}
+
+.td-view{
+  display:flex;
+  justify-content: center;
+  font-size: 13px;
+}

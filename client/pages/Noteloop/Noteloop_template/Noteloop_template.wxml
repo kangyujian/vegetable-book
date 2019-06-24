@@ -1,0 +1,21 @@
+<template name="Noteloop_template">
+
+ <view class='artistlist'>
+ <view class='author-time'>
+  <image  class='author-icon' src='{{authorIcon}}'></image>
+  <text class='author-name'>{{authorName}}</text>
+  <text class='data'>{{authorData}}</text>
+ </view>
+ <text class='title'>{{title}}</text>
+ <image class='articleimg' src='{{articleImg}}'></image>
+ <text class='articletext'>
+ {{articletext}}
+ </text>
+ <view class='article-like'>
+  <image class='article-icon' src='../../images/collect.png'></image>
+  <text class='article-like-text'>{{collect}}</text>
+  <image class='article-icon' src='../../images/good.png'></image>
+  <text  class='article-like-text'>{{good}}</text>
+ </view>
+</view>
+</template>

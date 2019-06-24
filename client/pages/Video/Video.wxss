@@ -1,0 +1,45 @@
+.preview-warp{
+  display: flex;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*居中对齐*/
+  position: relative;
+  background-color: #fff;
+}
+.prew_video{
+    display: flex;
+    align-items: center; /*垂直居中*/
+    justify-content: center; /*居中对齐*/
+    position: relative;
+    background-color: #fff;
+}
+.prew_video[hidden]{
+    display: none;
+}
+.prew_video .play{
+    width: 48rpx;
+    height: 48rpx;
+}
+
+/* 上传按钮组 */
+.upimg{
+  width: 49%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  float: left;
+  background: #41C7DB;
+  text-align: center;
+  border: 1px solid #000;
+  /* border-left: 1px solid #000; */
+}
+.upvideo{
+ width: 80%;
+  margin-top: 20rpx;
+  background-color: burlywood;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

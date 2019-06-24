@@ -1,0 +1,11 @@
+<text>\n</text>
+<text>\n</text>
+<text>\n</text>
+<text>\n</text>
+<button bindtap="start" class='btn'>开始录音</button>
+<button bindtap="pause" class='btn'>暂停录音</button>
+<button bindtap="stop" class='btn'>停止录音</button>
+<button bindtap="play" class='btn'>播放录音</button>
+<button bindtap="upload" class='btn'>上传录音</button>
+<text>\n</text>
+<button bindtap='goToVoiceDb' type='primary'>跳转到我的录音库</button>
